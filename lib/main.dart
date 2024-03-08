@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'WallPaper',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
+        
         useMaterial3: true,
       ),
       home: const WallPaperHomePage(),
@@ -41,7 +42,6 @@ class WallPaperHomePage extends StatelessWidget {
         children: [ 
           WallPaperSearch(),
           WallPaperCategory(),
-          // SizedBox(height: 20,),
           Flexible(child: TrendingImages()),
 
         ],
