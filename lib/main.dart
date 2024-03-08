@@ -38,11 +38,15 @@ class WallPaperHomePage extends StatelessWidget {
       ),
 
 
-      body:  const Column(
+      body:   Column(
         children: [ 
-          WallPaperSearch(),
-          WallPaperCategory(),
-          Flexible(child: TrendingImages()),
+          const WallPaperSearch(),
+          const WallPaperCategory(),
+          Container(
+          padding:  const EdgeInsets.all(10),
+          child:const Center(child: Text('Trending Images',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w600),)),
+        ),
+          const Flexible(child: TrendingImages()),
 
         ],
       ),

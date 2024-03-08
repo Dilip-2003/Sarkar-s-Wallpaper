@@ -75,10 +75,7 @@ class _TrendingImagesWidgetsState extends State<TrendingImagesWidgets> {
   Widget build(BuildContext context) {
     return  ListView(
       children: [
-        Container(
-          padding: const EdgeInsets.all(10),
-          child:const Center(child: Text('Trending Images',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w600),)),
-        ),
+       
         Container(
           margin: const EdgeInsets.symmetric(horizontal: 10),
           child: GridView.builder(
